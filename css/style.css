@@ -621,9 +621,9 @@ ol {
 	background: #000;
 	opacity: 0;
 	z-index: 2;
-	-webkit-transition: all 0.4s cubic-bezier(0.55, 0.09, 0.68, 0.53) 0s;
-	-o-transition: all 0.4s cubic-bezier(0.55, 0.09, 0.68, 0.53) 0s;
-	transition: all 0.4s cubic-bezier(0.55, 0.09, 0.68, 0.53) 0s;
+	-webkit-transition: all 0.4s;
+	-o-transition: all 0.4s;
+	transition: all 0.4s;
 }
 
 .portfolio-item:hover .port-pic:after {
