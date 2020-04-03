@@ -43,7 +43,9 @@ p {
 img {
 	max-width: 100%;
 }
-
+img:hover {
+  opacity: 0.5;
+}
 input:focus,
 select:focus,
 button:focus,
@@ -603,17 +605,12 @@ ol {
 .portfolio-item .port-pic {
 	margin-bottom: 30px;
 	display: block;
-	height: 240px;
-	width: 390px;
+	height: 480px;
 	background: #333;
 	background-position: center center;
 	background-size: cover;
-	
+	overflow: hidden;
 	position: relative;
-
-	
-    
-    
 }
 
 .portfolio-item .port-pic:after {
@@ -636,8 +633,6 @@ ol {
 	height: 100%;
 	top: 0;
 }
-
-
 
 /*---------------------
 	Contact section
@@ -1407,6 +1402,29 @@ ol {
 	.info-section .hero-info ul li span {
 		color: #9c9b9b;
 	}
+}
+. portfolio-item> img{
+  width: 100%;
+  height: 80%;
+}
+
+
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: #000000;
+  overflow: hidden;
+  width: 95%;
+  height:0;
+  transition: .5s ease;
+}
+
+
+.portfolio-item:hover .overlay{
+  bottom: 0;
+  height: 100%;
 }
 
 /* small Mobile :320px. */
